@@ -1,0 +1,23 @@
+name: macOS
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: macos-26
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Set up llama.cpp
+        run: Scripts/setup-llama.sh
+      - name: Check formatting
+        run: xcrun swift-format lint --strict --recursive App Sources Tests Package.swift
+      - name: Run Swift package tests
+        run: swift test
+      - name: Build macOS app
+        run: xcodebuild -project JournalInspect.xcodeproj -scheme JournalInspectApp CODE_SIGNING_ALLOWED=NO build

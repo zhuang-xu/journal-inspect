@@ -1,0 +1,136 @@
+name: JournalInspect
+options:
+  deploymentTarget:
+    macOS: '14.0'
+configFiles:
+  Debug: Config/Signing.xcconfig
+  Release: Config/Signing.xcconfig
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    SYMROOT: '$(SRCROOT)/.build/App/Build/Products'
+    CODE_SIGN_STYLE: Automatic
+    MACOSX_DEPLOYMENT_TARGET: '14.0'
+targets:
+  JournalCore:
+    type: framework
+    platform: macOS
+    sources: [Sources/JournalCore]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.journalinspect.core
+        GENERATE_INFOPLIST_FILE: YES
+  JournalLlama:
+    type: framework
+    platform: macOS
+    sources: [Sources/JournalLlama]
+    dependencies:
+      - framework: vendor/llama.cpp/build-apple/llama.xcframework
+        embed: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.journalinspect.llamaruntime
+        GENERATE_INFOPLIST_FILE: YES
+  JournalGeneration:
+    type: framework
+    platform: macOS
+    sources: [Sources/JournalGeneration]
+    dependencies:
+      - target: JournalCore
+      - target: JournalLlama
+      - framework: vendor/llama.cpp/build-apple/llama.xcframework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.journalinspect.generation
+        GENERATE_INFOPLIST_FILE: YES
+  JournalEmbeddings:
+    type: framework
+    platform: macOS
+    sources: [Sources/JournalEmbeddings]
+    dependencies:
+      - target: JournalCore
+      - target: JournalLlama
+      - framework: vendor/llama.cpp/build-apple/llama.xcframework
+        embed: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.journalinspect.embeddings
+        GENERATE_INFOPLIST_FILE: YES
+  JournalInspectApp:
+    type: application
+    productName: JournalInspect
+    platform: macOS
+    sources: [App]
+    dependencies:
+      - target: JournalGeneration
+        embed: true
+      - target: JournalLlama
+        embed: true
+      - target: JournalEmbeddings
+        embed: true
+      - framework: vendor/llama.cpp/build-apple/llama.xcframework
+        embed: true
+      - target: JournalCore
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zhuangxu.journalinspect.app
+        PRODUCT_NAME: JournalInspect
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        ENABLE_APP_SANDBOX: NO
+  JournalCoreTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests/JournalCoreTests]
+    dependencies:
+      - target: JournalGeneration
+      - target: JournalEmbeddings
+      - target: JournalLlama
+      - framework: vendor/llama.cpp/build-apple/llama.xcframework
+        embed: true
+      - target: JournalCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.journalinspect.tests
+        GENERATE_INFOPLIST_FILE: YES
+  JournalGenerationTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests/JournalGenerationTests]
+    dependencies:
+      - target: JournalGeneration
+      - target: JournalCore
+      - target: JournalLlama
+      - framework: vendor/llama.cpp/build-apple/llama.xcframework
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.journalinspect.generationtests
+        GENERATE_INFOPLIST_FILE: YES
+  JournalEmbeddingsTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests/JournalEmbeddingsTests]
+    dependencies:
+      - target: JournalEmbeddings
+      - framework: vendor/llama.cpp/build-apple/llama.xcframework
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.journalinspect.embeddingtests
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  JournalCoreTests:
+    build:
+      targets:
+        JournalCoreTests: [test]
+    test:
+      parallelizable: false
+      targets: [JournalCoreTests]
+  JournalInspectApp:
+    test:
+      targets: [JournalCoreTests, JournalEmbeddingsTests, JournalGenerationTests]
+    build:
+      targets:
+        JournalInspectApp: all

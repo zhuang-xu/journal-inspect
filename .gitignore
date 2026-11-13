@@ -1,0 +1,15 @@
+/data/
+*.sqlite*
+*.json
+__pycache__/
+.DS_Store
+vendor/
+
+.build/
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+/Config/Signing.local.xcconfig
+
+# Local model weights; never commit large model files.
+Models/

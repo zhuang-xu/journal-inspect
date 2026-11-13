@@ -1,0 +1,1695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00469D959A1A4D45B7DE7465 /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; };
+		01496214BF86723DC92A2D62 /* LocalAnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF68F27E401882E6AED8662 /* LocalAnswerModel.swift */; };
+		03F2C734622064DFAC443DA5 /* JournalLlama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */; };
+		048967B3A75766D5F77AD6EE /* JournalPromptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B2C5902756C71282CDB49 /* JournalPromptService.swift */; };
+		0655A083DAD86823EEA681C4 /* llama.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0B5CE57939F2F2C90A560DF8 /* ReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A0AA464F21F29B49794A2 /* ReaderViewModel.swift */; };
+		0FEDA17107DA32981104541B /* JournalEmbeddings.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		172F683EA5686FB1349D8037 /* EmbeddingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9330EA40C685F500FEF4F3 /* EmbeddingEngine.swift */; };
+		1732FF8144DFF9564EE3213F /* JournalCancellationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FEB24263AA50B404002C9F /* JournalCancellationTests.swift */; };
+		1B1B9E0A6DF52BD6BE06F59E /* EmbeddingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4428904338F1EDA2059F77 /* EmbeddingError.swift */; };
+		1C3A19CA12C5BB765ED1D4D3 /* llama.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C66AAB29D48B9F3D3224849 /* GenerationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB58AE66F4B80EF69C7E48 /* GenerationError.swift */; };
+		2295E6B2BE09097EE758EFA2 /* JournalEmbeddingCacheUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5AFAD601BDF2746F27BC09 /* JournalEmbeddingCacheUpdater.swift */; };
+		22B8548A0DED45E815E939D3 /* QwenPromptFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331F0DC99CF5C5BE94FBA54 /* QwenPromptFormatter.swift */; };
+		233BCC4AEE5918D68EA0F98C /* MetadataImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B04CF963F564244F8215FFD /* MetadataImport.swift */; };
+		24DE387949E0037F875A2D2E /* CachedJournalRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791D0F05916629E9B35B4BC8 /* CachedJournalRetriever.swift */; };
+		25240AE51DB71D8539E6A944 /* MemoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498C9BB166833FE16C78B30 /* MemoryViewModel.swift */; };
+		2604CFAC8C75070CD2914B46 /* JournalLlama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */; };
+		266899D6EBE3B6739012AB7F /* JournalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83C25479E05BC82E67A550 /* JournalContext.swift */; };
+		2AFAF61A2017B24883DBD383 /* GenerationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E358061B08A6A9029007AC4 /* GenerationEngine.swift */; };
+		2C326902FD5A553693EB8DDC /* JournalEmbeddings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */; };
+		37055DDF9550B30DF37220EA /* JournalCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */; };
+		38596E45096EF1E699D3D3BF /* JournalGeneration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A6FFE4766C4106E4B0FF55D /* JournalCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D8FE13F53EF7FB46AEF14FC /* JournalRetrieval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C98AFF9EBF5B0EE849369E /* JournalRetrieval.swift */; };
+		3F77D9F65319B168F4861AC0 /* JournalCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */; };
+		3FF0BBB61FE2DFE4FF492484 /* PromptAugmentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D46D4867367C539065C870 /* PromptAugmentationTests.swift */; };
+		435CF063EB433C5D92C1BFD2 /* JournalGeneration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */; };
+		46C105A23B16A7642991A2E1 /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; };
+		47982F9B87E20D1FCC957E3A /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; };
+		489FE9B4A3636362932A2F24 /* JournalReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F069E22DFDB74A6877C302 /* JournalReader.swift */; };
+		495B2F108390770CE2C96284 /* JournalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DAEF76817BF5BF90F142DC /* JournalWorker.swift */; };
+		496A3E7D9427C41A01E74D96 /* ContextPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609219C3C4CC81EF7A90EB49 /* ContextPreviewView.swift */; };
+		4BC193CA2E158544C7E35B8D /* LocalModelLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9125355753F73DFFC22331DB /* LocalModelLocation.swift */; };
+		4CFF84348A395356BFC4A505 /* LocalEmbeddingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F54AE2F6E52E30F8BB5BD89 /* LocalEmbeddingModel.swift */; };
+		4DE9D760B0FE9069441CC3AE /* PersonalMemorySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A74BC17D819523CC6C9D47E /* PersonalMemorySelection.swift */; };
+		4F17AD2C72690FC9E904955A /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; };
+		524BC9BFC01E7E49F0240171 /* llama.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5250A9504E86ADB9F4FB834A /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; };
+		537632220CE0EA64E72B8619 /* EmbeddingCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C06C7F811A5DFAE210C3AE6 /* EmbeddingCacheTests.swift */; };
+		541C62E63BE60B17D9C3A0BA /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDD9ECB58468127CB2EC38A /* Database.swift */; };
+		54825049754FBE4ECCDA7174 /* OnDemandJournalSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F340826C6B3F2F4B16BE80 /* OnDemandJournalSource.swift */; };
+		54CC81195FA91D4DFF57964F /* JournalCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */; };
+		563A92F2B80A178A75E983B1 /* JournalLlama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */; };
+		5B2D9C8F9C92B5BCB777B014 /* ModelVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8324FFC7C98AF182A9753B56 /* ModelVerification.swift */; };
+		5BDC693B6FA5CA5EE6282206 /* JournalCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BFF269D224E38B91A5E8AF5 /* JournalEmbeddings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */; };
+		60715B55A6E77BCA5D2A6E5A /* JournalAnswerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE02E9B279C79D497402F9CF /* JournalAnswerPresentation.swift */; };
+		60D12E235C49C6AA905F1BD4 /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; };
+		647C1FE87722242CC694ACE1 /* JournalEmbeddings.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66C187E641C06FE9F5A73A6F /* JournalReaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083E0C97DE49A9E7244F65B /* JournalReaderError.swift */; };
+		6A890CB8F275A9FCB80386C3 /* SemanticJournalRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5922F2962E9B550357636B83 /* SemanticJournalRetriever.swift */; };
+		6DC5DE40054120C2B5E80428 /* JournalLlama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */; };
+		6EFD511114E0A6B02E2A64BE /* JournalTestFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13685F80C1C1843E127C252B /* JournalTestFixture.swift */; };
+		71B28966E378CB476BBC0512 /* JournalEmbeddingCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34440EE42BC7FC7EA517DFDF /* JournalEmbeddingCache.swift */; };
+		72079A5A02BAC9AF6213B5B4 /* PromptAugmentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF0D0F70D399E925E17A1F /* PromptAugmentation.swift */; };
+		72B47CF7D2F4CA6A8BC440B2 /* ModelLoadStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FA86B4F6F5B3E249EC4586 /* ModelLoadStage.swift */; };
+		72E159AD43C92BCEE619DB05 /* JournalCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73B1667B462EA746EE784128 /* JournalAssetCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226DD040DE50080E24854F04 /* JournalAssetCursor.swift */; };
+		79A38480DC32EA9F326BC63B /* JournalEntryCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615C987127A5715727849365 /* JournalEntryCursor.swift */; };
+		7C5DEAD6269EFBE0A86CCF0A /* ModelExtractionEvaluationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517DB19543D4A975506BA5E4 /* ModelExtractionEvaluationTests.swift */; };
+		8385BD5B34A9DD2EC4C2141A /* GenerationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD589F1759D7456BA81545A /* GenerationModel.swift */; };
+		84E16F30514F7DDE340A47F9 /* EvidencePipelineEvaluationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E78A2153CCF0E46F05EFC3C /* EvidencePipelineEvaluationTests.swift */; };
+		8C684F879468D9188BAE37C6 /* PersonalMemoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3EC1BD519C1623F8DD39C2 /* PersonalMemoryStore.swift */; };
+		8DA6AEFDD24AC797DB818FC7 /* JournalFingerprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4568E1C91D3987866CFB1F5 /* JournalFingerprintTests.swift */; };
+		8DCB6E1E7C584690F35F441E /* JournalPrivacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111F03F5261BDCD4B381DA3F /* JournalPrivacyTests.swift */; };
+		8F8BACC9A77628413D086053 /* JournalLlama.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90581C6A68409FB3BBCBE86A /* JournalInspectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44F1F02D2B6FDB1894919EA /* JournalInspectApp.swift */; };
+		914FE6FC829FB02F08047B58 /* LocalModelLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36B0BE101AF78DBDFFBE16 /* LocalModelLocation.swift */; };
+		96794F6049FB47740926AF22 /* JournalLlama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */; };
+		98A66726F489B7EDC8B9FDB3 /* JournalAnswerPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B235FD2E599EE928E2009F /* JournalAnswerPresentationTests.swift */; };
+		9B29C73CF5B25FE43D23947A /* PromptProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E41986D5A0B767EEBE2208 /* PromptProgressView.swift */; };
+		9C455F6A3F4796244C9AB967 /* LlamaRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EDB87C79602A6568A5B00 /* LlamaRuntime.swift */; };
+		9E23DF5FDDFFDADA590DF6D7 /* JournalMetadataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140EB0B206AF7B5B477AD8C9 /* JournalMetadataStore.swift */; };
+		9EA523A5793D644B3A67415C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4E2C014445EBA640E00BB0 /* JournalEntry.swift */; };
+		9F0E283C3A638207CA489B95 /* LocalMemoryExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FD804E03B1D465595478F /* LocalMemoryExtractor.swift */; };
+		9F6F1DEE3B3DCADFCF7315B7 /* JournalGeneration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */; };
+		A7417F56C1297B82477AC0D0 /* PersonalMemoryExtractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAD4901A739B3CAADB18569 /* PersonalMemoryExtractionTests.swift */; };
+		AA4B6B44EFA3DFADF5911FAF /* PersonalMemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4786BA6DE14DEB719E0BCA /* PersonalMemoryTests.swift */; };
+		AA7F4985E7926DBBB5853FEE /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; };
+		AE232C2490F88D7FFE7CFD97 /* EntryTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E411B47F80459008F84584C2 /* EntryTextView.swift */; };
+		AE3BF94832F4BBA02057B4C9 /* JournalCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */; };
+		B1A0F42C51943F4D2D24DAE0 /* PersonalMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4A43FD0D3BD35D21D4B02 /* PersonalMemory.swift */; };
+		B213BE8A269EF15BD4B8AF18 /* EmbeddingVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD9DB66EEE57709CD918E6F /* EmbeddingVector.swift */; };
+		B5CCB4677F345817E03933F4 /* LocalAnswerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7DEF3C16DCE5B6EB0C463 /* LocalAnswerModelTests.swift */; };
+		B8A84F8D3C9655DE233C07EC /* JournalLlama.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA646193DC59CE96578E6EAA /* JournalGeneration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD7FE3AAA102DDA6D58FD018 /* EntryFingerprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858F9B2123660F2682096EC /* EntryFingerprint.swift */; };
+		C2A8C68DBA803C30FB4CF136 /* JournalCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */; };
+		C42A6DDC8C85F62864178314 /* PromptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1808B7C403A1B918772F195 /* PromptViewModel.swift */; };
+		C500C07ED97CBB44B9D47318 /* JournalInfrastructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B1D9C30F6FC3805A7DBF7C /* JournalInfrastructureTests.swift */; };
+		C55A3A98F3737CED3A933D95 /* MemoryRelevanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D22C3158C7ED1C740C5AE /* MemoryRelevanceTests.swift */; };
+		CACC69D277395F55A59717A4 /* AnswerTextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F5EABC2BC40BFB62FC7211 /* AnswerTextBuffer.swift */; };
+		CB19F6E47D2F7BFF34A2D9B0 /* SemanticRetrievalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF18C79B48F2D3858DB0ECE /* SemanticRetrievalTests.swift */; };
+		D08CBF2A0BE446A26BBA7342 /* JournalGeneration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D25D9BE3F962449D9EE274A8 /* PrivateStoreFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98FD66E4AA8C4EFA8D6B3D1 /* PrivateStoreFile.swift */; };
+		D6EDAF8B6AB915EF21EA3D16 /* EmbeddingLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB251D7E54C730E8A04303D0 /* EmbeddingLifecycleTests.swift */; };
+		D77A27CD31FE1D3EEFD93926 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8B8AB9B319F3C4C8858100 /* ReaderView.swift */; };
+		D8615D91FB1DA1197CF53794 /* JournalEmbeddings.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA5DB6FEB55A247B4E78789A /* JournalGeneration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */; };
+		E152E34746F937613DA3E0C3 /* JournalSynchronizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFF2472C1179ED96DD896CF /* JournalSynchronizationTests.swift */; };
+		E288FE447EEDA0259A3908F8 /* PersonalMemoryUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F13752933E9E80E44E4CD2 /* PersonalMemoryUpdater.swift */; };
+		E3510E9718FEA969F6E8081C /* JournalEmbeddings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */; };
+		E9515ABB212FED051A119217 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B257FF9199DBF8BFEB3A63 /* PromptView.swift */; };
+		EBDDD71E6F628D9C72FCAFEE /* JournalScaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC3179D06B175D3C15CCB04 /* JournalScaleTests.swift */; };
+		EFBBDFF351C89A1630438134 /* JournalValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E092358D3F9AA8FEE56DB9D /* JournalValidationTests.swift */; };
+		F6AD1D2540B88FE3FF2DD637 /* JournalPassages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2B4EC16B0F5B0707638ACE /* JournalPassages.swift */; };
+		F6E58B47CDC189CDB8AFCB3C /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB7EA6A145F4581E17EBD10 /* MemoryView.swift */; };
+		FDD40D892CC97AF414F15FC5 /* LocalModelLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11CBCD7714B0459F82C41F2 /* LocalModelLocationTests.swift */; };
+		FE78290B469B550F10C48163 /* EmbeddingSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B62EF6F718EDE1A439ECA2 /* EmbeddingSpace.swift */; };
+		FF8908D5A6A98E3681F031F6 /* llama.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED362E0925713C0F1EE4D045 /* llama.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFDC56AC8672744ED83CE237 /* JournalLlama.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17F864451C4E7CAA9CD72642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76BFD0F31051D7B0DB1E166;
+			remoteInfo = JournalCore;
+		};
+		2C380241D775D73B0E65F222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76BFD0F31051D7B0DB1E166;
+			remoteInfo = JournalCore;
+		};
+		2D3337C3125DE6885F1B2BC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76BFD0F31051D7B0DB1E166;
+			remoteInfo = JournalCore;
+		};
+		656DB4BC5B6E19B5BF57D2F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4FA32B4CBF558DB27FAD069;
+			remoteInfo = JournalGeneration;
+		};
+		6E77DC4A507CAABC6E14FA17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E34403C7D66CDE7CA91;
+			remoteInfo = JournalLlama;
+		};
+		7FC1B3B29E6F368C617A61D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76BFD0F31051D7B0DB1E166;
+			remoteInfo = JournalCore;
+		};
+		806D3C3F8429FA3173E9F1D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4FA32B4CBF558DB27FAD069;
+			remoteInfo = JournalGeneration;
+		};
+		8DCABA099418D5375EC733CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E34403C7D66CDE7CA91;
+			remoteInfo = JournalLlama;
+		};
+		B39D89BD26FAF65AD8DC7902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E34403C7D66CDE7CA91;
+			remoteInfo = JournalLlama;
+		};
+		BFE419FA2E36DD049C8021AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E34403C7D66CDE7CA91;
+			remoteInfo = JournalLlama;
+		};
+		C3DE37E77CE04C490BE27DEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76BFD0F31051D7B0DB1E166;
+			remoteInfo = JournalCore;
+		};
+		D15B3980D9502583D84D6672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E34403C7D66CDE7CA91;
+			remoteInfo = JournalLlama;
+		};
+		E23FAC1D12B0C22D8973D175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60EA7BAC6340007DE5CF62BC;
+			remoteInfo = JournalEmbeddings;
+		};
+		F020E7E27E278C29FD69B541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60EA7BAC6340007DE5CF62BC;
+			remoteInfo = JournalEmbeddings;
+		};
+		F73813CF3660ABABC278EF07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60EA7BAC6340007DE5CF62BC;
+			remoteInfo = JournalEmbeddings;
+		};
+		FC528B8E1472EF3B8BE59269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E697C1D68462E87E2C1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4FA32B4CBF558DB27FAD069;
+			remoteInfo = JournalGeneration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		205B9DE4EBDC0923D65E249F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA646193DC59CE96578E6EAA /* JournalGeneration.framework in Embed Frameworks */,
+				647C1FE87722242CC694ACE1 /* JournalEmbeddings.framework in Embed Frameworks */,
+				FFDC56AC8672744ED83CE237 /* JournalLlama.framework in Embed Frameworks */,
+				FF8908D5A6A98E3681F031F6 /* llama.xcframework in Embed Frameworks */,
+				5BDC693B6FA5CA5EE6282206 /* JournalCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FD4D5D12088328F4CBC33B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0FEDA17107DA32981104541B /* JournalEmbeddings.framework in Embed Frameworks */,
+				0655A083DAD86823EEA681C4 /* llama.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDBC8FB8576CDBE6FD6B157 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38596E45096EF1E699D3D3BF /* JournalGeneration.framework in Embed Frameworks */,
+				3A6FFE4766C4106E4B0FF55D /* JournalCore.framework in Embed Frameworks */,
+				B8A84F8D3C9655DE233C07EC /* JournalLlama.framework in Embed Frameworks */,
+				524BC9BFC01E7E49F0240171 /* llama.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09AA467A204FE14F9CDF8ED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D08CBF2A0BE446A26BBA7342 /* JournalGeneration.framework in Embed Frameworks */,
+				8F8BACC9A77628413D086053 /* JournalLlama.framework in Embed Frameworks */,
+				D8615D91FB1DA1197CF53794 /* JournalEmbeddings.framework in Embed Frameworks */,
+				1C3A19CA12C5BB765ED1D4D3 /* llama.xcframework in Embed Frameworks */,
+				72E159AD43C92BCEE619DB05 /* JournalCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		111F03F5261BDCD4B381DA3F /* JournalPrivacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPrivacyTests.swift; sourceTree = "<group>"; };
+		13685F80C1C1843E127C252B /* JournalTestFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTestFixture.swift; sourceTree = "<group>"; };
+		140EB0B206AF7B5B477AD8C9 /* JournalMetadataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalMetadataStore.swift; sourceTree = "<group>"; };
+		18F069E22DFDB74A6877C302 /* JournalReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalReader.swift; sourceTree = "<group>"; };
+		1A8B8AB9B319F3C4C8858100 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		226DD040DE50080E24854F04 /* JournalAssetCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalAssetCursor.swift; sourceTree = "<group>"; };
+		23FEB24263AA50B404002C9F /* JournalCancellationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalCancellationTests.swift; sourceTree = "<group>"; };
+		2498C9BB166833FE16C78B30 /* MemoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryViewModel.swift; sourceTree = "<group>"; };
+		24F5EABC2BC40BFB62FC7211 /* AnswerTextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTextBuffer.swift; sourceTree = "<group>"; };
+		2AAB58AE66F4B80EF69C7E48 /* GenerationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationError.swift; sourceTree = "<group>"; };
+		2FD64FD5BB838FFF57000ED3 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		3083E0C97DE49A9E7244F65B /* JournalReaderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalReaderError.swift; sourceTree = "<group>"; };
+		34440EE42BC7FC7EA517DFDF /* JournalEmbeddingCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEmbeddingCache.swift; sourceTree = "<group>"; };
+		36D46D4867367C539065C870 /* PromptAugmentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptAugmentationTests.swift; sourceTree = "<group>"; };
+		36E41986D5A0B767EEBE2208 /* PromptProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptProgressView.swift; sourceTree = "<group>"; };
+		36F8774B6B5818C1A44044DD /* JournalCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E36B0BE101AF78DBDFFBE16 /* LocalModelLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalModelLocation.swift; sourceTree = "<group>"; };
+		4C6B2C5902756C71282CDB49 /* JournalPromptService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPromptService.swift; sourceTree = "<group>"; };
+		4E358061B08A6A9029007AC4 /* GenerationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationEngine.swift; sourceTree = "<group>"; };
+		4E78A2153CCF0E46F05EFC3C /* EvidencePipelineEvaluationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvidencePipelineEvaluationTests.swift; sourceTree = "<group>"; };
+		4F54AE2F6E52E30F8BB5BD89 /* LocalEmbeddingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEmbeddingModel.swift; sourceTree = "<group>"; };
+		4F5AFAD601BDF2746F27BC09 /* JournalEmbeddingCacheUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEmbeddingCacheUpdater.swift; sourceTree = "<group>"; };
+		517DB19543D4A975506BA5E4 /* ModelExtractionEvaluationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtractionEvaluationTests.swift; sourceTree = "<group>"; };
+		523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JournalGeneration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5331F0DC99CF5C5BE94FBA54 /* QwenPromptFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwenPromptFormatter.swift; sourceTree = "<group>"; };
+		5922F2962E9B550357636B83 /* SemanticJournalRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticJournalRetriever.swift; sourceTree = "<group>"; };
+		5BD589F1759D7456BA81545A /* GenerationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationModel.swift; sourceTree = "<group>"; };
+		5E092358D3F9AA8FEE56DB9D /* JournalValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalValidationTests.swift; sourceTree = "<group>"; };
+		609219C3C4CC81EF7A90EB49 /* ContextPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextPreviewView.swift; sourceTree = "<group>"; };
+		615C987127A5715727849365 /* JournalEntryCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryCursor.swift; sourceTree = "<group>"; };
+		62F13752933E9E80E44E4CD2 /* PersonalMemoryUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMemoryUpdater.swift; sourceTree = "<group>"; };
+		6CF7DEF3C16DCE5B6EB0C463 /* LocalAnswerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAnswerModelTests.swift; sourceTree = "<group>"; };
+		6FFF2472C1179ED96DD896CF /* JournalSynchronizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalSynchronizationTests.swift; sourceTree = "<group>"; };
+		791D0F05916629E9B35B4BC8 /* CachedJournalRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedJournalRetriever.swift; sourceTree = "<group>"; };
+		7A4786BA6DE14DEB719E0BCA /* PersonalMemoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMemoryTests.swift; sourceTree = "<group>"; };
+		7B04CF963F564244F8215FFD /* MetadataImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataImport.swift; sourceTree = "<group>"; };
+		7C06C7F811A5DFAE210C3AE6 /* EmbeddingCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingCacheTests.swift; sourceTree = "<group>"; };
+		7C9330EA40C685F500FEF4F3 /* EmbeddingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingEngine.swift; sourceTree = "<group>"; };
+		8324FFC7C98AF182A9753B56 /* ModelVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelVerification.swift; sourceTree = "<group>"; };
+		88C4A43FD0D3BD35D21D4B02 /* PersonalMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMemory.swift; sourceTree = "<group>"; };
+		8A74BC17D819523CC6C9D47E /* PersonalMemorySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMemorySelection.swift; sourceTree = "<group>"; };
+		8CB7EA6A145F4581E17EBD10 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
+		8E5EDB87C79602A6568A5B00 /* LlamaRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamaRuntime.swift; sourceTree = "<group>"; };
+		9125355753F73DFFC22331DB /* LocalModelLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalModelLocation.swift; sourceTree = "<group>"; };
+		979FD804E03B1D465595478F /* LocalMemoryExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMemoryExtractor.swift; sourceTree = "<group>"; };
+		9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JournalEmbeddings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD9DB66EEE57709CD918E6F /* EmbeddingVector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingVector.swift; sourceTree = "<group>"; };
+		9FC3179D06B175D3C15CCB04 /* JournalScaleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalScaleTests.swift; sourceTree = "<group>"; };
+		A02601AC3FF4AD34D9435BBD /* JournalGenerationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalGenerationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A858F9B2123660F2682096EC /* EntryFingerprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryFingerprint.swift; sourceTree = "<group>"; };
+		A8C36F4BD68274F916440940 /* JournalEmbeddingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalEmbeddingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DAEF76817BF5BF90F142DC /* JournalWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalWorker.swift; sourceTree = "<group>"; };
+		AB4428904338F1EDA2059F77 /* EmbeddingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingError.swift; sourceTree = "<group>"; };
+		AFDD9ECB58468127CB2EC38A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		B1808B7C403A1B918772F195 /* PromptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptViewModel.swift; sourceTree = "<group>"; };
+		B4F340826C6B3F2F4B16BE80 /* OnDemandJournalSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDemandJournalSource.swift; sourceTree = "<group>"; };
+		BDAD4901A739B3CAADB18569 /* PersonalMemoryExtractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMemoryExtractionTests.swift; sourceTree = "<group>"; };
+		BE02E9B279C79D497402F9CF /* JournalAnswerPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalAnswerPresentation.swift; sourceTree = "<group>"; };
+		BF3EC1BD519C1623F8DD39C2 /* PersonalMemoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMemoryStore.swift; sourceTree = "<group>"; };
+		C4568E1C91D3987866CFB1F5 /* JournalFingerprintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalFingerprintTests.swift; sourceTree = "<group>"; };
+		C8C98AFF9EBF5B0EE849369E /* JournalRetrieval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalRetrieval.swift; sourceTree = "<group>"; };
+		CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JournalCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B1D9C30F6FC3805A7DBF7C /* JournalInfrastructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalInfrastructureTests.swift; sourceTree = "<group>"; };
+		D5B235FD2E599EE928E2009F /* JournalAnswerPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalAnswerPresentationTests.swift; sourceTree = "<group>"; };
+		DB4E2C014445EBA640E00BB0 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JournalLlama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11CBCD7714B0459F82C41F2 /* LocalModelLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalModelLocationTests.swift; sourceTree = "<group>"; };
+		E1B62EF6F718EDE1A439ECA2 /* EmbeddingSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingSpace.swift; sourceTree = "<group>"; };
+		E411B47F80459008F84584C2 /* EntryTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTextView.swift; sourceTree = "<group>"; };
+		ED362E0925713C0F1EE4D045 /* llama.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = llama.xcframework; path = "vendor/llama.cpp/build-apple/llama.xcframework"; sourceTree = "<group>"; };
+		F06A0AA464F21F29B49794A2 /* ReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewModel.swift; sourceTree = "<group>"; };
+		F44F1F02D2B6FDB1894919EA /* JournalInspectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalInspectApp.swift; sourceTree = "<group>"; };
+		F5F1C5E4E3D60E7680B0DC87 /* JournalInspect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalInspect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FA86B4F6F5B3E249EC4586 /* ModelLoadStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLoadStage.swift; sourceTree = "<group>"; };
+		F7DF0D0F70D399E925E17A1F /* PromptAugmentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptAugmentation.swift; sourceTree = "<group>"; };
+		F8B257FF9199DBF8BFEB3A63 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		F98FD66E4AA8C4EFA8D6B3D1 /* PrivateStoreFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateStoreFile.swift; sourceTree = "<group>"; };
+		FA7D22C3158C7ED1C740C5AE /* MemoryRelevanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryRelevanceTests.swift; sourceTree = "<group>"; };
+		FB251D7E54C730E8A04303D0 /* EmbeddingLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddingLifecycleTests.swift; sourceTree = "<group>"; };
+		FB2B4EC16B0F5B0707638ACE /* JournalPassages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPassages.swift; sourceTree = "<group>"; };
+		FBF68F27E401882E6AED8662 /* LocalAnswerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAnswerModel.swift; sourceTree = "<group>"; };
+		FC83C25479E05BC82E67A550 /* JournalContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalContext.swift; sourceTree = "<group>"; };
+		FFF18C79B48F2D3858DB0ECE /* SemanticRetrievalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticRetrievalTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ADA22843F53EDDCBF5AC598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5DB6FEB55A247B4E78789A /* JournalGeneration.framework in Frameworks */,
+				2C326902FD5A553693EB8DDC /* JournalEmbeddings.framework in Frameworks */,
+				2604CFAC8C75070CD2914B46 /* JournalLlama.framework in Frameworks */,
+				4F17AD2C72690FC9E904955A /* llama.xcframework in Frameworks */,
+				AE3BF94832F4BBA02057B4C9 /* JournalCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6056064F993A9AF915534A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435CF063EB433C5D92C1BFD2 /* JournalGeneration.framework in Frameworks */,
+				C2A8C68DBA803C30FB4CF136 /* JournalCore.framework in Frameworks */,
+				96794F6049FB47740926AF22 /* JournalLlama.framework in Frameworks */,
+				60D12E235C49C6AA905F1BD4 /* llama.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6737A593597CF4E45D9E1A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37055DDF9550B30DF37220EA /* JournalCore.framework in Frameworks */,
+				6DC5DE40054120C2B5E80428 /* JournalLlama.framework in Frameworks */,
+				00469D959A1A4D45B7DE7465 /* llama.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78F10ADC96ECDE07E94BD69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F77D9F65319B168F4861AC0 /* JournalCore.framework in Frameworks */,
+				03F2C734622064DFAC443DA5 /* JournalLlama.framework in Frameworks */,
+				5250A9504E86ADB9F4FB834A /* llama.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C387F62E0C3258EEF0BE23C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3510E9718FEA969F6E8081C /* JournalEmbeddings.framework in Frameworks */,
+				46C105A23B16A7642991A2E1 /* llama.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF609D7C8D45759551E785ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6F1DEE3B3DCADFCF7315B7 /* JournalGeneration.framework in Frameworks */,
+				563A92F2B80A178A75E983B1 /* JournalLlama.framework in Frameworks */,
+				5BFF269D224E38B91A5E8AF5 /* JournalEmbeddings.framework in Frameworks */,
+				AA7F4985E7926DBBB5853FEE /* llama.xcframework in Frameworks */,
+				54CC81195FA91D4DFF57964F /* JournalCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BE41124066DC1B78FA3389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47982F9B87E20D1FCC957E3A /* llama.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FCAA49BB5010C4500185F5 /* JournalCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C06C7F811A5DFAE210C3AE6 /* EmbeddingCacheTests.swift */,
+				4E78A2153CCF0E46F05EFC3C /* EvidencePipelineEvaluationTests.swift */,
+				D5B235FD2E599EE928E2009F /* JournalAnswerPresentationTests.swift */,
+				23FEB24263AA50B404002C9F /* JournalCancellationTests.swift */,
+				C4568E1C91D3987866CFB1F5 /* JournalFingerprintTests.swift */,
+				D2B1D9C30F6FC3805A7DBF7C /* JournalInfrastructureTests.swift */,
+				111F03F5261BDCD4B381DA3F /* JournalPrivacyTests.swift */,
+				9FC3179D06B175D3C15CCB04 /* JournalScaleTests.swift */,
+				6FFF2472C1179ED96DD896CF /* JournalSynchronizationTests.swift */,
+				13685F80C1C1843E127C252B /* JournalTestFixture.swift */,
+				5E092358D3F9AA8FEE56DB9D /* JournalValidationTests.swift */,
+				FA7D22C3158C7ED1C740C5AE /* MemoryRelevanceTests.swift */,
+				7A4786BA6DE14DEB719E0BCA /* PersonalMemoryTests.swift */,
+				36D46D4867367C539065C870 /* PromptAugmentationTests.swift */,
+				FFF18C79B48F2D3858DB0ECE /* SemanticRetrievalTests.swift */,
+			);
+			name = JournalCoreTests;
+			path = Tests/JournalCoreTests;
+			sourceTree = "<group>";
+		};
+		0C73B77A90053F8A09160591 /* JournalGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				24F5EABC2BC40BFB62FC7211 /* AnswerTextBuffer.swift */,
+				4E358061B08A6A9029007AC4 /* GenerationEngine.swift */,
+				2AAB58AE66F4B80EF69C7E48 /* GenerationError.swift */,
+				5BD589F1759D7456BA81545A /* GenerationModel.swift */,
+				FBF68F27E401882E6AED8662 /* LocalAnswerModel.swift */,
+				979FD804E03B1D465595478F /* LocalMemoryExtractor.swift */,
+				3E36B0BE101AF78DBDFFBE16 /* LocalModelLocation.swift */,
+				F5FA86B4F6F5B3E249EC4586 /* ModelLoadStage.swift */,
+				8324FFC7C98AF182A9753B56 /* ModelVerification.swift */,
+				5331F0DC99CF5C5BE94FBA54 /* QwenPromptFormatter.swift */,
+			);
+			name = JournalGeneration;
+			path = Sources/JournalGeneration;
+			sourceTree = "<group>";
+		};
+		2F87FC0CCC77E6EF5C3FBF4A /* JournalEmbeddingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB251D7E54C730E8A04303D0 /* EmbeddingLifecycleTests.swift */,
+			);
+			name = JournalEmbeddingsTests;
+			path = Tests/JournalEmbeddingsTests;
+			sourceTree = "<group>";
+		};
+		31DD1660C8C0CDBF941C392D /* JournalEmbeddings */ = {
+			isa = PBXGroup;
+			children = (
+				7C9330EA40C685F500FEF4F3 /* EmbeddingEngine.swift */,
+				AB4428904338F1EDA2059F77 /* EmbeddingError.swift */,
+				4F54AE2F6E52E30F8BB5BD89 /* LocalEmbeddingModel.swift */,
+				9125355753F73DFFC22331DB /* LocalModelLocation.swift */,
+			);
+			name = JournalEmbeddings;
+			path = Sources/JournalEmbeddings;
+			sourceTree = "<group>";
+		};
+		3856652F9BF41F3CC075CA16 /* JournalCore */ = {
+			isa = PBXGroup;
+			children = (
+				9C0BA48B46D0902B8E1FFD71 /* Data */,
+				F422990A4CC4B57CC2AA86AA /* Memory */,
+				ADBBDD877AA3DE068EDAFCF9 /* Prompt */,
+				6CC103FC4111AB91A3FC0F5F /* Retrieval */,
+			);
+			name = JournalCore;
+			path = Sources/JournalCore;
+			sourceTree = "<group>";
+		};
+		390C52254A498C051F8B9AB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */,
+				36F8774B6B5818C1A44044DD /* JournalCoreTests.xctest */,
+				9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */,
+				A8C36F4BD68274F916440940 /* JournalEmbeddingsTests.xctest */,
+				523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */,
+				A02601AC3FF4AD34D9435BBD /* JournalGenerationTests.xctest */,
+				F5F1C5E4E3D60E7680B0DC87 /* JournalInspect.app */,
+				DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E860A6F91B3A54FF399C3A1 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2FD64FD5BB838FFF57000ED3 /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6CC103FC4111AB91A3FC0F5F /* Retrieval */ = {
+			isa = PBXGroup;
+			children = (
+				791D0F05916629E9B35B4BC8 /* CachedJournalRetriever.swift */,
+				E1B62EF6F718EDE1A439ECA2 /* EmbeddingSpace.swift */,
+				9CD9DB66EEE57709CD918E6F /* EmbeddingVector.swift */,
+				34440EE42BC7FC7EA517DFDF /* JournalEmbeddingCache.swift */,
+				4F5AFAD601BDF2746F27BC09 /* JournalEmbeddingCacheUpdater.swift */,
+				FB2B4EC16B0F5B0707638ACE /* JournalPassages.swift */,
+				5922F2962E9B550357636B83 /* SemanticJournalRetriever.swift */,
+			);
+			path = Retrieval;
+			sourceTree = "<group>";
+		};
+		9C0BA48B46D0902B8E1FFD71 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD9ECB58468127CB2EC38A /* Database.swift */,
+				A858F9B2123660F2682096EC /* EntryFingerprint.swift */,
+				226DD040DE50080E24854F04 /* JournalAssetCursor.swift */,
+				DB4E2C014445EBA640E00BB0 /* JournalEntry.swift */,
+				615C987127A5715727849365 /* JournalEntryCursor.swift */,
+				140EB0B206AF7B5B477AD8C9 /* JournalMetadataStore.swift */,
+				18F069E22DFDB74A6877C302 /* JournalReader.swift */,
+				3083E0C97DE49A9E7244F65B /* JournalReaderError.swift */,
+				A8DAEF76817BF5BF90F142DC /* JournalWorker.swift */,
+				7B04CF963F564244F8215FFD /* MetadataImport.swift */,
+				B4F340826C6B3F2F4B16BE80 /* OnDemandJournalSource.swift */,
+				F98FD66E4AA8C4EFA8D6B3D1 /* PrivateStoreFile.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9F855341DC9472217FCB1C25 /* JournalGenerationTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CF7DEF3C16DCE5B6EB0C463 /* LocalAnswerModelTests.swift */,
+				E11CBCD7714B0459F82C41F2 /* LocalModelLocationTests.swift */,
+				517DB19543D4A975506BA5E4 /* ModelExtractionEvaluationTests.swift */,
+				BDAD4901A739B3CAADB18569 /* PersonalMemoryExtractionTests.swift */,
+			);
+			name = JournalGenerationTests;
+			path = Tests/JournalGenerationTests;
+			sourceTree = "<group>";
+		};
+		A7E7A798E6CBB24AEE5A2902 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				609219C3C4CC81EF7A90EB49 /* ContextPreviewView.swift */,
+				E411B47F80459008F84584C2 /* EntryTextView.swift */,
+				F44F1F02D2B6FDB1894919EA /* JournalInspectApp.swift */,
+				4C6B2C5902756C71282CDB49 /* JournalPromptService.swift */,
+				8CB7EA6A145F4581E17EBD10 /* MemoryView.swift */,
+				2498C9BB166833FE16C78B30 /* MemoryViewModel.swift */,
+				36E41986D5A0B767EEBE2208 /* PromptProgressView.swift */,
+				F8B257FF9199DBF8BFEB3A63 /* PromptView.swift */,
+				B1808B7C403A1B918772F195 /* PromptViewModel.swift */,
+				1A8B8AB9B319F3C4C8858100 /* ReaderView.swift */,
+				F06A0AA464F21F29B49794A2 /* ReaderViewModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ADBBDD877AA3DE068EDAFCF9 /* Prompt */ = {
+			isa = PBXGroup;
+			children = (
+				BE02E9B279C79D497402F9CF /* JournalAnswerPresentation.swift */,
+				FC83C25479E05BC82E67A550 /* JournalContext.swift */,
+				C8C98AFF9EBF5B0EE849369E /* JournalRetrieval.swift */,
+				F7DF0D0F70D399E925E17A1F /* PromptAugmentation.swift */,
+			);
+			path = Prompt;
+			sourceTree = "<group>";
+		};
+		B364790C82278B1F712A2339 /* JournalLlama */ = {
+			isa = PBXGroup;
+			children = (
+				8E5EDB87C79602A6568A5B00 /* LlamaRuntime.swift */,
+			);
+			name = JournalLlama;
+			path = Sources/JournalLlama;
+			sourceTree = "<group>";
+		};
+		C308BC6C6AFF3A5187FE48D9 = {
+			isa = PBXGroup;
+			children = (
+				A7E7A798E6CBB24AEE5A2902 /* App */,
+				4E860A6F91B3A54FF399C3A1 /* Config */,
+				3856652F9BF41F3CC075CA16 /* JournalCore */,
+				08FCAA49BB5010C4500185F5 /* JournalCoreTests */,
+				31DD1660C8C0CDBF941C392D /* JournalEmbeddings */,
+				2F87FC0CCC77E6EF5C3FBF4A /* JournalEmbeddingsTests */,
+				0C73B77A90053F8A09160591 /* JournalGeneration */,
+				9F855341DC9472217FCB1C25 /* JournalGenerationTests */,
+				B364790C82278B1F712A2339 /* JournalLlama */,
+				EF56A174833E70373E16A515 /* Frameworks */,
+				390C52254A498C051F8B9AB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF56A174833E70373E16A515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED362E0925713C0F1EE4D045 /* llama.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F422990A4CC4B57CC2AA86AA /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				88C4A43FD0D3BD35D21D4B02 /* PersonalMemory.swift */,
+				8A74BC17D819523CC6C9D47E /* PersonalMemorySelection.swift */,
+				BF3EC1BD519C1623F8DD39C2 /* PersonalMemoryStore.swift */,
+				62F13752933E9E80E44E4CD2 /* PersonalMemoryUpdater.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4651633C0C2CF5EBF60E74C3 /* JournalCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40141F5F04E705BFE5D7F7A2 /* Build configuration list for PBXNativeTarget "JournalCoreTests" */;
+			buildPhases = (
+				52E3FAF49E4B7F256416D1AD /* Sources */,
+				0ADA22843F53EDDCBF5AC598 /* Frameworks */,
+				205B9DE4EBDC0923D65E249F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEDE5A5CD0F482E470BF00CB /* PBXTargetDependency */,
+				9727A542503CD363AAB07DC3 /* PBXTargetDependency */,
+				1411F8A2238B23120CD06A5D /* PBXTargetDependency */,
+				21AD6C5554A4030C0F35A70E /* PBXTargetDependency */,
+			);
+			name = JournalCoreTests;
+			packageProductDependencies = (
+			);
+			productName = JournalCoreTests;
+			productReference = 36F8774B6B5818C1A44044DD /* JournalCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A62ABE58E3B114B5DCE8403 /* JournalInspectApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA8545BDC240F32B27EF334 /* Build configuration list for PBXNativeTarget "JournalInspectApp" */;
+			buildPhases = (
+				5E5A70423B94B3F54F525D42 /* Sources */,
+				CF609D7C8D45759551E785ED /* Frameworks */,
+				C09AA467A204FE14F9CDF8ED /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F7A0489CD4A3DFA93D37B2B /* PBXTargetDependency */,
+				69171DBD97369FFEC37B2083 /* PBXTargetDependency */,
+				2D35DE7A406E1277CEACCAFA /* PBXTargetDependency */,
+				0447EC558EA72C6CCA8CF8AF /* PBXTargetDependency */,
+			);
+			name = JournalInspectApp;
+			packageProductDependencies = (
+			);
+			productName = JournalInspectApp;
+			productReference = F5F1C5E4E3D60E7680B0DC87 /* JournalInspect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60EA7BAC6340007DE5CF62BC /* JournalEmbeddings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5DDC032F4F9040EEAA1AE75 /* Build configuration list for PBXNativeTarget "JournalEmbeddings" */;
+			buildPhases = (
+				2F23A0CD3BA9B9E488528240 /* Sources */,
+				78F10ADC96ECDE07E94BD69E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EE6EA88F4D2A7599FAD46A3 /* PBXTargetDependency */,
+				C7F0944835AA87FC5F3B38CB /* PBXTargetDependency */,
+			);
+			name = JournalEmbeddings;
+			packageProductDependencies = (
+			);
+			productName = JournalEmbeddings;
+			productReference = 9BB7EF01FA2D5F10A6687CA2 /* JournalEmbeddings.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61CF8397615A71E77E631C7D /* JournalGenerationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7BD735DB47195F5B3CD2F94 /* Build configuration list for PBXNativeTarget "JournalGenerationTests" */;
+			buildPhases = (
+				DEF6261F4F2C6A55CBCCE8B3 /* Sources */,
+				6056064F993A9AF915534A83 /* Frameworks */,
+				5DDBC8FB8576CDBE6FD6B157 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2AD1BBF0AE58289B58A297 /* PBXTargetDependency */,
+				928821E23C7D143BBEE4FF8A /* PBXTargetDependency */,
+				2F8AE9DA13B1B9B73CCCA422 /* PBXTargetDependency */,
+			);
+			name = JournalGenerationTests;
+			packageProductDependencies = (
+			);
+			productName = JournalGenerationTests;
+			productReference = A02601AC3FF4AD34D9435BBD /* JournalGenerationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4FA32B4CBF558DB27FAD069 /* JournalGeneration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 878B03813ADA45DE9ADF17DD /* Build configuration list for PBXNativeTarget "JournalGeneration" */;
+			buildPhases = (
+				1EE1CA690FA6C49ECFB9ECB2 /* Sources */,
+				6737A593597CF4E45D9E1A16 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1194842B8CE3ABED586436BA /* PBXTargetDependency */,
+				1C4FE04F2A3B7486EFA6124E /* PBXTargetDependency */,
+			);
+			name = JournalGeneration;
+			packageProductDependencies = (
+			);
+			productName = JournalGeneration;
+			productReference = 523E40C7CD19D684F0EA0F81 /* JournalGeneration.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA84E6A9BB72581CDDB32735 /* JournalEmbeddingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25A84F9FE6A4F619A1F6DF6 /* Build configuration list for PBXNativeTarget "JournalEmbeddingsTests" */;
+			buildPhases = (
+				0F41B2E2517539FFC72FAF84 /* Sources */,
+				C387F62E0C3258EEF0BE23C7 /* Frameworks */,
+				55FD4D5D12088328F4CBC33B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				946077EB8D22DFD3B590CBEC /* PBXTargetDependency */,
+			);
+			name = JournalEmbeddingsTests;
+			packageProductDependencies = (
+			);
+			productName = JournalEmbeddingsTests;
+			productReference = A8C36F4BD68274F916440940 /* JournalEmbeddingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E76BFD0F31051D7B0DB1E166 /* JournalCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C481EB483AC41ED1D3BE5C /* Build configuration list for PBXNativeTarget "JournalCore" */;
+			buildPhases = (
+				F223D339CF3B9691F8309756 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JournalCore;
+			packageProductDependencies = (
+			);
+			productName = JournalCore;
+			productReference = CECD9ECDFF727BFC1DC34843 /* JournalCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8111E34403C7D66CDE7CA91 /* JournalLlama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C130A2457253D107D85DC9 /* Build configuration list for PBXNativeTarget "JournalLlama" */;
+			buildPhases = (
+				0F34202CDF4E6CDC01B60E9C /* Sources */,
+				F3BE41124066DC1B78FA3389 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JournalLlama;
+			packageProductDependencies = (
+			);
+			productName = JournalLlama;
+			productReference = DC91D9B33F7F78DA984DB653 /* JournalLlama.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96E697C1D68462E87E2C1A1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4651633C0C2CF5EBF60E74C3 = {
+						ProvisioningStyle = Automatic;
+					};
+					4A62ABE58E3B114B5DCE8403 = {
+						ProvisioningStyle = Automatic;
+					};
+					60EA7BAC6340007DE5CF62BC = {
+						ProvisioningStyle = Automatic;
+					};
+					61CF8397615A71E77E631C7D = {
+						ProvisioningStyle = Automatic;
+					};
+					D4FA32B4CBF558DB27FAD069 = {
+						ProvisioningStyle = Automatic;
+					};
+					DA84E6A9BB72581CDDB32735 = {
+						ProvisioningStyle = Automatic;
+					};
+					E76BFD0F31051D7B0DB1E166 = {
+						ProvisioningStyle = Automatic;
+					};
+					F8111E34403C7D66CDE7CA91 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4055183EC21309EC258275BE /* Build configuration list for PBXProject "JournalInspect" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C308BC6C6AFF3A5187FE48D9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 390C52254A498C051F8B9AB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E76BFD0F31051D7B0DB1E166 /* JournalCore */,
+				4651633C0C2CF5EBF60E74C3 /* JournalCoreTests */,
+				60EA7BAC6340007DE5CF62BC /* JournalEmbeddings */,
+				DA84E6A9BB72581CDDB32735 /* JournalEmbeddingsTests */,
+				D4FA32B4CBF558DB27FAD069 /* JournalGeneration */,
+				61CF8397615A71E77E631C7D /* JournalGenerationTests */,
+				4A62ABE58E3B114B5DCE8403 /* JournalInspectApp */,
+				F8111E34403C7D66CDE7CA91 /* JournalLlama */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F34202CDF4E6CDC01B60E9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C455F6A3F4796244C9AB967 /* LlamaRuntime.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F41B2E2517539FFC72FAF84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EDAF8B6AB915EF21EA3D16 /* EmbeddingLifecycleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EE1CA690FA6C49ECFB9ECB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CACC69D277395F55A59717A4 /* AnswerTextBuffer.swift in Sources */,
+				2AFAF61A2017B24883DBD383 /* GenerationEngine.swift in Sources */,
+				1C66AAB29D48B9F3D3224849 /* GenerationError.swift in Sources */,
+				8385BD5B34A9DD2EC4C2141A /* GenerationModel.swift in Sources */,
+				01496214BF86723DC92A2D62 /* LocalAnswerModel.swift in Sources */,
+				9F0E283C3A638207CA489B95 /* LocalMemoryExtractor.swift in Sources */,
+				914FE6FC829FB02F08047B58 /* LocalModelLocation.swift in Sources */,
+				72B47CF7D2F4CA6A8BC440B2 /* ModelLoadStage.swift in Sources */,
+				5B2D9C8F9C92B5BCB777B014 /* ModelVerification.swift in Sources */,
+				22B8548A0DED45E815E939D3 /* QwenPromptFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F23A0CD3BA9B9E488528240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172F683EA5686FB1349D8037 /* EmbeddingEngine.swift in Sources */,
+				1B1B9E0A6DF52BD6BE06F59E /* EmbeddingError.swift in Sources */,
+				4CFF84348A395356BFC4A505 /* LocalEmbeddingModel.swift in Sources */,
+				4BC193CA2E158544C7E35B8D /* LocalModelLocation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E3FAF49E4B7F256416D1AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537632220CE0EA64E72B8619 /* EmbeddingCacheTests.swift in Sources */,
+				84E16F30514F7DDE340A47F9 /* EvidencePipelineEvaluationTests.swift in Sources */,
+				98A66726F489B7EDC8B9FDB3 /* JournalAnswerPresentationTests.swift in Sources */,
+				1732FF8144DFF9564EE3213F /* JournalCancellationTests.swift in Sources */,
+				8DA6AEFDD24AC797DB818FC7 /* JournalFingerprintTests.swift in Sources */,
+				C500C07ED97CBB44B9D47318 /* JournalInfrastructureTests.swift in Sources */,
+				8DCB6E1E7C584690F35F441E /* JournalPrivacyTests.swift in Sources */,
+				EBDDD71E6F628D9C72FCAFEE /* JournalScaleTests.swift in Sources */,
+				E152E34746F937613DA3E0C3 /* JournalSynchronizationTests.swift in Sources */,
+				6EFD511114E0A6B02E2A64BE /* JournalTestFixture.swift in Sources */,
+				EFBBDFF351C89A1630438134 /* JournalValidationTests.swift in Sources */,
+				C55A3A98F3737CED3A933D95 /* MemoryRelevanceTests.swift in Sources */,
+				AA4B6B44EFA3DFADF5911FAF /* PersonalMemoryTests.swift in Sources */,
+				3FF0BBB61FE2DFE4FF492484 /* PromptAugmentationTests.swift in Sources */,
+				CB19F6E47D2F7BFF34A2D9B0 /* SemanticRetrievalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E5A70423B94B3F54F525D42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496A3E7D9427C41A01E74D96 /* ContextPreviewView.swift in Sources */,
+				AE232C2490F88D7FFE7CFD97 /* EntryTextView.swift in Sources */,
+				90581C6A68409FB3BBCBE86A /* JournalInspectApp.swift in Sources */,
+				048967B3A75766D5F77AD6EE /* JournalPromptService.swift in Sources */,
+				F6E58B47CDC189CDB8AFCB3C /* MemoryView.swift in Sources */,
+				25240AE51DB71D8539E6A944 /* MemoryViewModel.swift in Sources */,
+				9B29C73CF5B25FE43D23947A /* PromptProgressView.swift in Sources */,
+				E9515ABB212FED051A119217 /* PromptView.swift in Sources */,
+				C42A6DDC8C85F62864178314 /* PromptViewModel.swift in Sources */,
+				D77A27CD31FE1D3EEFD93926 /* ReaderView.swift in Sources */,
+				0B5CE57939F2F2C90A560DF8 /* ReaderViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF6261F4F2C6A55CBCCE8B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CCB4677F345817E03933F4 /* LocalAnswerModelTests.swift in Sources */,
+				FDD40D892CC97AF414F15FC5 /* LocalModelLocationTests.swift in Sources */,
+				7C5DEAD6269EFBE0A86CCF0A /* ModelExtractionEvaluationTests.swift in Sources */,
+				A7417F56C1297B82477AC0D0 /* PersonalMemoryExtractionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F223D339CF3B9691F8309756 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DE387949E0037F875A2D2E /* CachedJournalRetriever.swift in Sources */,
+				541C62E63BE60B17D9C3A0BA /* Database.swift in Sources */,
+				FE78290B469B550F10C48163 /* EmbeddingSpace.swift in Sources */,
+				B213BE8A269EF15BD4B8AF18 /* EmbeddingVector.swift in Sources */,
+				BD7FE3AAA102DDA6D58FD018 /* EntryFingerprint.swift in Sources */,
+				60715B55A6E77BCA5D2A6E5A /* JournalAnswerPresentation.swift in Sources */,
+				73B1667B462EA746EE784128 /* JournalAssetCursor.swift in Sources */,
+				266899D6EBE3B6739012AB7F /* JournalContext.swift in Sources */,
+				71B28966E378CB476BBC0512 /* JournalEmbeddingCache.swift in Sources */,
+				2295E6B2BE09097EE758EFA2 /* JournalEmbeddingCacheUpdater.swift in Sources */,
+				9EA523A5793D644B3A67415C /* JournalEntry.swift in Sources */,
+				79A38480DC32EA9F326BC63B /* JournalEntryCursor.swift in Sources */,
+				9E23DF5FDDFFDADA590DF6D7 /* JournalMetadataStore.swift in Sources */,
+				F6AD1D2540B88FE3FF2DD637 /* JournalPassages.swift in Sources */,
+				489FE9B4A3636362932A2F24 /* JournalReader.swift in Sources */,
+				66C187E641C06FE9F5A73A6F /* JournalReaderError.swift in Sources */,
+				3D8FE13F53EF7FB46AEF14FC /* JournalRetrieval.swift in Sources */,
+				495B2F108390770CE2C96284 /* JournalWorker.swift in Sources */,
+				233BCC4AEE5918D68EA0F98C /* MetadataImport.swift in Sources */,
+				54825049754FBE4ECCDA7174 /* OnDemandJournalSource.swift in Sources */,
+				B1A0F42C51943F4D2D24DAE0 /* PersonalMemory.swift in Sources */,
+				4DE9D760B0FE9069441CC3AE /* PersonalMemorySelection.swift in Sources */,
+				8C684F879468D9188BAE37C6 /* PersonalMemoryStore.swift in Sources */,
+				E288FE447EEDA0259A3908F8 /* PersonalMemoryUpdater.swift in Sources */,
+				D25D9BE3F962449D9EE274A8 /* PrivateStoreFile.swift in Sources */,
+				72079A5A02BAC9AF6213B5B4 /* PromptAugmentation.swift in Sources */,
+				6A890CB8F275A9FCB80386C3 /* SemanticJournalRetriever.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0447EC558EA72C6CCA8CF8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76BFD0F31051D7B0DB1E166 /* JournalCore */;
+			targetProxy = 2C380241D775D73B0E65F222 /* PBXContainerItemProxy */;
+		};
+		1194842B8CE3ABED586436BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76BFD0F31051D7B0DB1E166 /* JournalCore */;
+			targetProxy = C3DE37E77CE04C490BE27DEA /* PBXContainerItemProxy */;
+		};
+		1411F8A2238B23120CD06A5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8111E34403C7D66CDE7CA91 /* JournalLlama */;
+			targetProxy = BFE419FA2E36DD049C8021AB /* PBXContainerItemProxy */;
+		};
+		1C4FE04F2A3B7486EFA6124E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8111E34403C7D66CDE7CA91 /* JournalLlama */;
+			targetProxy = B39D89BD26FAF65AD8DC7902 /* PBXContainerItemProxy */;
+		};
+		21AD6C5554A4030C0F35A70E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76BFD0F31051D7B0DB1E166 /* JournalCore */;
+			targetProxy = 17F864451C4E7CAA9CD72642 /* PBXContainerItemProxy */;
+		};
+		2D35DE7A406E1277CEACCAFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60EA7BAC6340007DE5CF62BC /* JournalEmbeddings */;
+			targetProxy = F73813CF3660ABABC278EF07 /* PBXContainerItemProxy */;
+		};
+		2F8AE9DA13B1B9B73CCCA422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8111E34403C7D66CDE7CA91 /* JournalLlama */;
+			targetProxy = 8DCABA099418D5375EC733CB /* PBXContainerItemProxy */;
+		};
+		69171DBD97369FFEC37B2083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8111E34403C7D66CDE7CA91 /* JournalLlama */;
+			targetProxy = D15B3980D9502583D84D6672 /* PBXContainerItemProxy */;
+		};
+		6F7A0489CD4A3DFA93D37B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4FA32B4CBF558DB27FAD069 /* JournalGeneration */;
+			targetProxy = 656DB4BC5B6E19B5BF57D2F9 /* PBXContainerItemProxy */;
+		};
+		928821E23C7D143BBEE4FF8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76BFD0F31051D7B0DB1E166 /* JournalCore */;
+			targetProxy = 2D3337C3125DE6885F1B2BC7 /* PBXContainerItemProxy */;
+		};
+		946077EB8D22DFD3B590CBEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60EA7BAC6340007DE5CF62BC /* JournalEmbeddings */;
+			targetProxy = E23FAC1D12B0C22D8973D175 /* PBXContainerItemProxy */;
+		};
+		9727A542503CD363AAB07DC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60EA7BAC6340007DE5CF62BC /* JournalEmbeddings */;
+			targetProxy = F020E7E27E278C29FD69B541 /* PBXContainerItemProxy */;
+		};
+		9EE6EA88F4D2A7599FAD46A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E76BFD0F31051D7B0DB1E166 /* JournalCore */;
+			targetProxy = 7FC1B3B29E6F368C617A61D4 /* PBXContainerItemProxy */;
+		};
+		C7F0944835AA87FC5F3B38CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8111E34403C7D66CDE7CA91 /* JournalLlama */;
+			targetProxy = 6E77DC4A507CAABC6E14FA17 /* PBXContainerItemProxy */;
+		};
+		CD2AD1BBF0AE58289B58A297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4FA32B4CBF558DB27FAD069 /* JournalGeneration */;
+			targetProxy = 806D3C3F8429FA3173E9F1D1 /* PBXContainerItemProxy */;
+		};
+		FEDE5A5CD0F482E470BF00CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4FA32B4CBF558DB27FAD069 /* JournalGeneration */;
+			targetProxy = FC528B8E1472EF3B8BE59269 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B501FFD64E917D658AD420F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.tests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0D1441CF521F9CE150C0BDC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuangxu.journalinspect.app;
+				PRODUCT_NAME = JournalInspect;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		107BEBC968A4897920F0EA63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.llamaruntime;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		35F0E9BA4E3F8A90E5DF9F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.generation;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		46BD988B53B4DFBF845E2230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.generation;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		4978A8E7E16204423B162C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD64FD5BB838FFF57000ED3 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "$(SRCROOT)/.build/App/Build/Products";
+			};
+			name = Debug;
+		};
+		6A56C655898CF15240F6A6AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD64FD5BB838FFF57000ED3 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "$(SRCROOT)/.build/App/Build/Products";
+			};
+			name = Release;
+		};
+		7BD84AE81507AF0743082E5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.core;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		88F634070CA653084047E05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.embeddings;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		8C36E37A03A72787C875B60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.embeddingtests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8F1D227F2B4C910E54373374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.generationtests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C14CBF5C5ABAEE9AD237F1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2B3217E0C640B8A2E6A8BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.generationtests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DE20844FB398802C1D9E1E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.embeddingtests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ED2A83461B109E5417ED188E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.core;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		EDFBC2AB84BF0045024B0896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuangxu.journalinspect.app;
+				PRODUCT_NAME = JournalInspect;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F08BA7C2432E17BF681647CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.embeddings;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		F71851E5084A85587907AEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"vendor/llama.cpp/build-apple\"",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.journalinspect.llamaruntime;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40141F5F04E705BFE5D7F7A2 /* Build configuration list for PBXNativeTarget "JournalCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B501FFD64E917D658AD420F /* Debug */,
+				C14CBF5C5ABAEE9AD237F1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4055183EC21309EC258275BE /* Build configuration list for PBXProject "JournalInspect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4978A8E7E16204423B162C87 /* Debug */,
+				6A56C655898CF15240F6A6AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4CA8545BDC240F32B27EF334 /* Build configuration list for PBXNativeTarget "JournalInspectApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFBC2AB84BF0045024B0896 /* Debug */,
+				0D1441CF521F9CE150C0BDC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83C130A2457253D107D85DC9 /* Build configuration list for PBXNativeTarget "JournalLlama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				107BEBC968A4897920F0EA63 /* Debug */,
+				F71851E5084A85587907AEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		878B03813ADA45DE9ADF17DD /* Build configuration list for PBXNativeTarget "JournalGeneration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BD988B53B4DFBF845E2230 /* Debug */,
+				35F0E9BA4E3F8A90E5DF9F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A0C481EB483AC41ED1D3BE5C /* Build configuration list for PBXNativeTarget "JournalCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD84AE81507AF0743082E5F /* Debug */,
+				ED2A83461B109E5417ED188E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C25A84F9FE6A4F619A1F6DF6 /* Build configuration list for PBXNativeTarget "JournalEmbeddingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE20844FB398802C1D9E1E73 /* Debug */,
+				8C36E37A03A72787C875B60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C5DDC032F4F9040EEAA1AE75 /* Build configuration list for PBXNativeTarget "JournalEmbeddings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F634070CA653084047E05E /* Debug */,
+				F08BA7C2432E17BF681647CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F7BD735DB47195F5B3CD2F94 /* Build configuration list for PBXNativeTarget "JournalGenerationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B3217E0C640B8A2E6A8BD8 /* Debug */,
+				8F1D227F2B4C910E54373374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96E697C1D68462E87E2C1A1B /* Project object */;
+}
