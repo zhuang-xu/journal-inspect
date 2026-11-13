@@ -32,6 +32,15 @@ Comparison questions need explicit event boundaries or user clarification when u
 
 Exit criteria: requested/available periods and gaps are visible; original examples support continuity and change; no claims of complete historical analysis from a small retrieval set. None of this period-summary/routing work is implemented today.
 
+## 5. Multimedia support
+
+- [ ] Verify how synced photos, videos and audio recordings can be resolved from Apple Journal’s attachment metadata using a controlled test entry. Keep source access read-only.
+- [ ] Show photo thumbnails and full previews in Entries. Add audio and video playback for available files. Load attachments on demand and show an unavailable state for missing or inaccessible files.
+- [ ] Add opt-in, on-device OCR for images and transcription for recordings. Index the extracted text through the existing embedding pipeline. Label each result by source and link it to the original attachment, with timestamps for recordings.
+- [ ] Evaluate local image search for photos without readable text after attachment viewing and text search are working.
+
+Track attachment revisions separately so replaced or deleted media cannot leave stale search results. Verify missing, inaccessible, replaced and deleted attachments with synthetic fixtures.
+
 ## Deferred
 
-Autonomous tool loops, relationship graphs, proactive coaching, attachments, cloud inference and fine-tuning are outside the current implementation. Separate evaluation of background-memory-on/off answers is also needed before claiming that the profile improves real answer quality generally.
+Autonomous tool loops, relationship graphs, proactive coaching, cloud inference and fine-tuning are outside the current implementation. Separate evaluation of background-memory-on/off answers is also needed before claiming that the profile improves real answer quality generally.

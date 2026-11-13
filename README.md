@@ -57,3 +57,7 @@ DEVELOPMENT_TEAM = YOUR_TEAM_ID
 Grant Full Disk Access to the app if macOS blocks access to the Journal database. If the app's signing identity changes, macOS may require granting access again.
 
 See the [documentation](docs/README.md) for usage, storage, model provenance and opt-in checks.
+
+## TODO
+
+- [Multimedia support](docs/plans/ROADMAP.md#5-multimedia-support)
